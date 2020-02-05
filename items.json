@@ -2,7 +2,7 @@
     "FLIER": {
        "exits": {},
        "actions": {
-          "read": "Hello"
+          "READ": "Hello"
        },
        "progress": 1
     },

@@ -63,10 +63,9 @@ def update(game,items,current,response) :
     for e in c["exits"]:
         if response == e["exit"]:
             return e["target"]
-    return current 
 
     for item in c["items"]:
-        if response == "GET " + item["item"] and not check-inventory(item["item"]):
+        if response == "GET " + item["item"] and not check_inventory(item["item"]):
             print(item["take"])
             inventory.append(item["item"])
             return current
@@ -82,6 +81,8 @@ def update(game,items,current,response) :
             if response == action + " " + i:
                 print(items[i]["actions"][action])
                 return current
+
+    return current 
 
 
     
