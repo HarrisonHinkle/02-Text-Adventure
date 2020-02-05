@@ -1,0 +1,112 @@
+{
+	"START": {
+		"name": "the front of a large building",
+		"desc": "There is a mysterious man out front saying handing out flyers and you decide to take one",
+		"up": "Upon closer inspection, the building appears to be five stories tall but has no windows and a sign above saying ' '.",
+		"exits": [{
+			"exit":"1",
+			"target": "F1"
+		}, {
+			"exit":"ENTER",
+			"target":"F1"
+		}],
+		"items": []
+	},
+	"F1": {
+		"name": "First Floor",
+        "desc": "You enter to see a long hallway. The walls a draped with curtains.",
+        "up": " It's just a noraml ceiling.",
+		"exits": [{
+			"exit": "ELEVATOR",
+			"target": "ELVT"
+		}, {
+			"exit": "ENTRANCE",
+			"target": "START"
+		}],
+		"items": [
+            {
+                "item":"BOOKSHELF",
+                "desc":"At the other end you see a lone bookshelf",
+                "inspect":"You can see light comming from under the bookshelf"
+            }
+        ]
+	},
+	"F2": {
+		"name": "Secound Floor",
+		"desc": "You are facing the south side of a white house. There is no door here,\nand all the windows are barred.",
+		"exits": [{
+			"exit": "ELEVATOR",
+			"target": "ELVT"
+		}],
+		"items": []
+	},
+	"F3": {
+		"name": "Third Floor",
+		"desc": "",
+		"exits": [{
+			"exit": "ELEVATOR",
+			"target": "ELVT"
+		}],
+		"items": []
+	},
+	"F4": {
+		"name": "Fourth Floor",
+        "desc": "You enter a stange room where on the only thing that seems to be in it is a ceiling fan attached to floor",
+        "up": "You look up and find a bed attched to the ceiling, along with a table, and some chairs.",
+		"exits": [{
+			"exit": "ELEVATOR",
+			"target": "ELVT"
+		}],
+		"items": []
+	},
+	"F5": {
+		"name": "Fifth Flooth",
+        "desc": "You enter what apears to be a normal bed room. There is bed, a small cupboard, a TV mounted on the wall, and a door that looks to lead into a closet ",
+        "up": "There is just a regular ceiling fan.",
+		"exits": [{
+			"exit": "ELEVATOR",
+			"target": "ELVT"
+		}],
+		"items": []
+	},
+	"F6": {
+		"name": "Final Floor",
+		"desc": "",
+		"exits": [{
+			"exit": "ELEVATOR",
+			"target": "ELVT"
+		}],
+		"items": [
+            {
+                "item": "SWORD",
+                "desc": "An ornately carved sword is displayed on the wall.",
+                "take": "You take the sword from the wall. It glows slightly in your hand."
+            }
+        ]
+	},
+	"ELVT": {
+		"name": "Elevator",
+        "desc": "The elevator has buttons for floors 1 through 5, there is a hole where the sixth button should be.",
+        "up": "Above the door so see in writing '14531325'",
+		"exits": [{
+			"exit": "1",
+			"target": "F1"
+		}, {
+			"exit": "2",
+			"target": "F2"
+		}, {
+			"exit": "3",
+			"target": "F3"
+		}, {
+			"exit": "4",
+			"target": "F4"
+		}, {
+			"exit": "5",
+			"target": "F5"
+		}, {
+			"exit": "6",
+			"target": "F6"
+		}],
+		"items": []
+	}
+}

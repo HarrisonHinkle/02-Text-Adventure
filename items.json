@@ -1,16 +1,17 @@
 {
-    "PAMPHLET": {
+    "FLIER": {
        "exits": {},
        "actions": {
-          "read": "The pamphlet says, Welcome to Zork!"
+          "read": "Hello"
        },
-       "points": 1
+       "progress": 1
     },
-    "SWORD": {
-       "exits": {
-          "CELLA": "The sword glows with a faint blue glow!"
+    "BOOKSHELF": {
+       "exits": {},
+       "actions": {
+          "inspect":"You can see light comming from under the bookshelf",
+          "move": "You move the bookshelf to reveal an elevator door"
        },
-       "actions": {},
-       "points": 10
+       "progress": 10
     }
  }
