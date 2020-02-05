@@ -33,7 +33,7 @@
 	},
 	"F2": {
 		"name": "Secound Floor",
-		"desc": "You are facing the south side of a white house. There is no door here,\nand all the windows are barred.",
+		"desc": "",
 		"exits": [{
 			"exit": "ELEVATOR",
 			"target": "ELVT"
