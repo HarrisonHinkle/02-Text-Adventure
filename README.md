@@ -1,2 +1,2 @@
 # 02-Text-Adventure
-Code for a text base adventure game made for my game technology course
+For my IU Game Technology course I was tasked with making a short text adventure game in python while also importing and using .json files. I'm not very good at story telling so I tried focusing on puzzle soving element and traveling back and forth between location to achive an objective. It takes place in a building called Ramos's Mansion (I'm bad with names so I literally just took one from a MTG trading card I had lying around). The goal is to get to the sixth floor to see what's at the end. It's nothing to fancy or special, the puzzle are really that exciting, but I tried to do what I could with my limited knowledge of the format.
