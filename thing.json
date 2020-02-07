@@ -1,112 +1,1843 @@
 {
-	"START": {
+	"START1": {
 		"name": "the front of a large building",
-		"desc": "There is a mysterious man out front saying handing out flyers and you decide to take one",
-		"up": "Upon closer inspection, the building appears to be five stories tall but has no windows and a sign above saying ' '.",
-		"exits": [{
-			"exit":"1",
-			"target": "F1"
-		}, {
-			"exit":"ENTER",
-			"target":"F1"
-		}],
+		"desc": "There is a mysterious man out front handing out flyers and you decide to take one [Enter 'read flier' to see what is written on it.]",
+		"up": "Upon closer inspection, the building appears to be five stories tall but has no windows and a neon sign above with the text 'Ramos's Mansion'.",
+		"exits": [
+			{
+				"exit": "1",
+				"target": "F1V1"
+			},
+			{
+				"exit": "ENTER",
+				"target": "F1V1"
+			}
+		],
 		"items": []
 	},
-	"F1": {
+	"START2": {
+		"name": "the front of a large building",
+		"desc": "The man handing out flyers is gone.",
+		"up": "Upon closer inspection, the building appears to be five stories tall but has no windows and a neon sign above with the text 'Ramos's Mansion'.",
+		"exits": [
+			{
+				"exit": "1",
+				"target": "F1V2"
+			},
+			{
+				"exit": "ENTER",
+				"target": "F1V2"
+			}
+		],
+		"items": []
+	},
+	"START3": {
+		"name": "the front of a large building",
+		"desc": "The man handing out flyers is gone.",
+		"up": "Upon closer inspection, the building appears to be five stories tall but has no windows and a neon sign above with the text 'Ramos's Mansion'.",
+		"exits": [
+			{
+				"exit": "1",
+				"target": "F1V3"
+			},
+			{
+				"exit": "ENTER",
+				"target": "F1V3"
+			}
+		],
+		"items": []
+	},
+	"START4": {
+		"name": "the front of a large building",
+		"desc": "The man handing out flyers is gone.",
+		"up": "Upon closer inspection, the building appears to be five stories tall but has no windows and a neon sign above with the text 'Ramos's Mansion'.",
+		"exits": [
+			{
+				"exit": "1",
+				"target": "F1V4"
+			},
+			{
+				"exit": "ENTER",
+				"target": "F1V4"
+			}
+		],
+		"items": []
+	},
+	"START5": {
+		"name": "the front of a large building",
+		"desc": "The man handing out flyers is gone.",
+		"up": "Upon closer inspection, the building appears to be five stories tall but has no windows and a neon sign above with the text 'Ramos's Mansion'.",
+		"exits": [
+			{
+				"exit": "1",
+				"target": "F1V5"
+			},
+			{
+				"exit": "ENTER",
+				"target": "F1V5"
+			}
+		],
+		"items": []
+	},
+	"START6": {
+		"name": "the front of a large building",
+		"desc": "The man handing out flyers is gone.",
+		"up": "Upon closer inspection, the building appears to be five stories tall but has no windows and a neon sign above with the text 'Ramos's Mansion'.",
+		"exits": [
+			{
+				"exit": "1",
+				"target": "F1V6"
+			},
+			{
+				"exit": "ENTER",
+				"target": "F1V6"
+			}
+		],
+		"items": []
+	},
+	"START7": {
+		"name": "the front of a large building",
+		"desc": "The man handing out flyers is gone.",
+		"up": "Upon closer inspection, the building appears to be five stories tall but has no windows and a neon sign above with the text 'Ramos's Mansion'.",
+		"exits": [
+			{
+				"exit": "1",
+				"target": "F1V7"
+			},
+			{
+				"exit": "ENTER",
+				"target": "F1V7"
+			}
+		],
+		"items": []
+	},
+	"START8": {
+		"name": "the front of a large building",
+		"desc": "The man handing out flyers is gone.",
+		"up": "Upon closer inspection, the building appears to be five stories tall but has no windows and a neon sign above with the text 'Ramos's Mansion'.",
+		"exits": [
+			{
+				"exit": "1",
+				"target": "F1V8"
+			},
+			{
+				"exit": "ENTER",
+				"target": "F1V8"
+			}
+		],
+		"items": []
+	},
+	"START9": {
+		"name": "the front of a large building",
+		"desc": "The man handing out flyers is gone.",
+		"up": "Upon closer inspection, the building appears to be five stories tall but has no windows and a neon sign above with the text 'Ramos's Mansion'.",
+		"exits": [
+			{
+				"exit": "1",
+				"target": "F1V9"
+			},
+			{
+				"exit": "ENTER",
+				"target": "F1V9"
+			}
+		],
+		"items": []
+	},
+	"START10": {
+		"name": "the front of a large building",
+		"desc": "The man handing out flyers is gone.",
+		"up": "Upon closer inspection, the building appears to be five stories tall but has no windows and a neon sign above with the text 'Ramos's Mansion'.",
+		"exits": [
+			{
+				"exit": "1",
+				"target": "F1V10"
+			},
+			{
+				"exit": "ENTER",
+				"target": "F1V10"
+			}
+		],
+		"items": []
+	},
+	"F1V1": {
 		"name": "First Floor",
-        "desc": "You enter to see a long hallway. The walls a draped with curtains.",
-        "up": " It's just a noraml ceiling.",
-		"exits": [{
-			"exit": "ELEVATOR",
-			"target": "ELVT"
-		}, {
-			"exit": "ENTRANCE",
-			"target": "START"
-		}],
+		"desc": "You enter to see a long hallway.",
+		"up": "It's just a normal ceiling.",
+		"exits": [
+			{
+				"exit": "ENTRANCE",
+				"target": "START1"
+			},
+			{
+				"exit": "MOVE BOOKSHELF",
+				"target": "F1V2"
+			},
+			{
+				"exit": "PULL CURTAINS",
+				"target": "F1PW1"
+			}
+		],
+		"items": [		
+			{
+				"item": "CURTAINS",
+				"desc": "The walls are draped with curtains.",
+				"inspect": "You find a cord to pull one of the curtains up."
+			},
+			{
+				"item": "BOOKSHELF",
+				"desc": "At the other end you see a lone bookshelf",
+				"inspect":"You can see light comming from under the bookshelf"
+			}
+			
+		]
+	},	
+	"F1V2": {
+		"name": "First Floor",
+		"desc": "You enter to see a long hallway.",
+		"up": " It's just a normal ceiling.",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV1"
+			},
+			{
+				"exit": "ENTRANCE",
+				"target": "START2"
+			},
+			{
+				"exit": "PULL CURTAINS",
+				"target": "F1PW2"
+			}
+		],
 		"items": [
-            {
-                "item":"BOOKSHELF",
-                "desc":"At the other end you see a lone bookshelf",
-                "inspect":"You can see light comming from under the bookshelf"
-            }
-        ]
+			{
+				"item": "CURTAINS",
+				"desc": "The walls are draped with curtains.",
+				"inspect": "You find a cord to pull one of the curtains up."
+			},
+			{
+				"item": "BOOKSHELF",
+				"desc": "At the other end there is an elevator",
+				"inspect": "You already moved the bookshelf."
+			}
+		]
+	}, 
+	"F1V3": {
+		"name": "First Floor",
+		"desc": "You enter to see a long hallway.",
+		"up": " It's just a normal ceiling.",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV2"
+			},
+			{
+				"exit": "ENTRANCE",
+				"target": "START3"
+			},
+			{
+				"exit": "PULL CURTAINS",
+				"target": "F1PW3"
+			}
+		],
+		"items": [
+			{
+				"item": "CURTAINS",
+				"desc": "The walls are draped with curtains.",
+				"inspect": "You find a cord to pull one of the curtains up."
+			},
+			{
+				"item": "BOOKSHELF",
+				"desc": "At the other end there is an elevator",
+				"inspect": "You already moved the bookshelf."
+			}
+		]
 	},
-	"F2": {
+	"F1V4": {
+		"name": "First Floor",
+		"desc": "You enter to see a long hallway.",
+		"up": " It's just a normal ceiling.",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV3"
+			},
+			{
+				"exit": "ENTRANCE",
+				"target": "START4"
+			},
+			{
+				"exit": "PULL CURTAINS",
+				"target": "F1PW4"
+			}
+		],
+		"items": [
+			{
+				"item": "CURTAINS",
+				"desc": "The walls are draped with curtains.",
+				"inspect": "You find a cord to pull one of the curtains up."
+			},
+			{
+				"item": "BOOKSHELF",
+				"desc": "At the other end there is an elevator",
+				"inspect": "You already moved the bookshelf."
+			}
+		]
+	}, 
+	"F1V5": {
+		"name": "First Floor",
+		"desc": "You enter to see a long hallway.",
+		"up": " It's just a normal ceiling.",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV4"
+			},
+			{
+				"exit": "ENTRANCE",
+				"target": "START5"
+			},
+			{
+				"exit": "PULL CURTAINS",
+				"target": "F1PW5"
+			}
+		],
+		"items": [
+			{
+				"item": "CURTAINS",
+				"desc": "The walls are draped with curtains.",
+				"inspect": "You find a cord to pull one of the curtains up."
+			},
+			{
+				"item": "BOOKSHELF",
+				"desc": "At the other end there is an elevator",
+				"inspect": "You already moved the bookshelf."
+			}
+		]
+	},
+	"F1V6": {
+		"name": "First Floor",
+		"desc": "The safe opens and there is a blue gem inside, grab the gem so you can continue.",
+		"up": " It's just a normal ceiling.",
+		"exits": [
+			{
+				"exit": "GET GEM",
+				"target": "F1V7"
+			}
+		],
+		"items": [
+			{
+				"item": "GEM",
+				"desc": "The gem has a soft blue glow to it.",
+				"inspect": "You can't tell what kind of gem it is.",
+				"take": "You pick up the gem"
+			},
+			{
+				"item": "SAFE",
+				"desc": "You're not sure if Acetate is even a real word but hey you got the password right.",
+				"inspect": "The safe is open, the animatronic has stoped talking."
+			}
+		]
+	},
+	"F1V7": {
+		"name": "First Floor",
+		"desc": "You are in a long hallway..",
+		"up": " It's just a normal ceiling.",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV5"
+			},
+			{
+				"exit": "ENTRANCE",
+				"target": "START7"
+			}
+		],
+		"items": [
+			{
+				"item": "BOOKSHELF",
+				"desc": "At the other end there is an elevator",
+				"inspect": "You already moved the bookshelf"
+			},
+			{
+				"item": "SAFE",
+				"desc": "The safe is open and you got what you needed",
+				"inspect": "It's empty on the inside, like you."
+			}
+		]
+	},
+	"F1V8": {
+		"name": "First Floor",
+		"desc": "You enter to see a long hallway.",
+		"up": " It's just a normal ceiling.",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV7"
+			},
+			{
+				"exit": "ENTRANCE",
+				"target": "START8"
+			}
+		],
+		"items": [
+			{
+				"item": "BOOKSHELF",
+				"desc": "At the other end there is an elevator",
+				"inspect": "You already moved the bookshelf"
+			},
+			{
+				"item": "SAFE",
+				"desc": "The safe is open and you got what you needed",
+				"inspect": "It's empty on the inside, like you."
+			}
+		]
+	},"F1V9": {
+		"name": "First Floor",
+		"desc": "You enter to see a long hallway.",
+		"up": " It's just a normal ceiling.",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV6"
+			},
+			{
+				"exit": "ENTRANCE",
+				"target": "START8"
+			}
+		],
+		"items": [
+			{
+				"item": "BOOKSHELF",
+				"desc": "At the other end there is an elevator",
+				"inspect": "You already moved the bookshelf"
+			},
+			{
+				"item": "SAFE",
+				"desc": "The safe is open and you got what you needed",
+				"inspect": "It's empty on the inside, like you."
+			}
+		]
+	},"F1V10": {
+		"name": "First Floor",
+		"desc": "You enter to see a long hallway.",
+		"up": " It's just a normal ceiling.",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV8"
+			},
+			{
+				"exit": "ENTRANCE",
+				"target": "START9"
+			}
+		],
+		"items": [
+			{
+				"item": "BOOKSHELF",
+				"desc": "At the other end there is an elevator",
+				"inspect": "You already moved the bookshelf"
+			},
+			{
+				"item": "SAFE",
+				"desc": "The safe is open and you got what you needed",
+				"inspect": "It's empty on the inside, like you."
+			}
+		]
+	},
+	"F1PW1": {
+		"name": "First Floor",
+		"desc": "'What's the password' you hear coming from the safe skull on the safe.",
+		"up": " It's just a normal ceiling.",
+		"exits": [
+			{
+				"exit": "MOVE BOOKSHELF",
+				"target": "F1V2"
+			},
+			{
+				"exit": "ACETATE",
+				"target": "CHEAT"
+			},
+			{
+				"exit": "ENTRANCE",
+				"target": "START1"
+			},
+			{
+				"exit": "1453125",
+				"target": "NOPE1"
+			}
+		],
+		"items": [
+			{
+				"item": "BOOKSHELF",
+				"desc": "At the other end you see a lone bookshelf",
+				"inspect":"You can see light comming from under the bookshelf"
+			},
+			{
+				"item": "SAFE",
+				"desc": "It won't shut up unless you leave or answer the question [Hint: just type the password no extra text is needed]",
+				"inspect": "At first you're shocked but upon closer look, it's clearly an animatronic. 'What's the password' it repeats."
+			}
+		]
+	},
+	"F1PW2": {
+		"name": "First Floor",
+		"desc": "'What's the password' you hear coming from the safe skull on the safe.",
+		"up": " It's just a normal ceiling.",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV2"
+			},
+			{
+				"exit": "ACETATE",
+				"target": "CHEAT"
+			},
+			{
+				"exit": "ENTRANCE",
+				"target": "START2"
+			},
+			{
+				"exit": "1453125",
+				"target": "NOPE2"
+			}
+		],
+		"items": [
+			{
+				"item": "BOOKSHELF",
+				"desc": "At the other end there is an elevator",
+				"inspect": "You already moved the bookshelf"
+			},
+			{
+				"item": "SAFE",
+				"desc": "It won't shut up unless you leave or answer the question [Hint: just type the password no extra text is needed]",
+				"inspect": "At first you're shocked but upon closer look, it's clearly an animatronic. 'What's the password' it repeats."
+			}
+		]
+	},
+	"F1PW3": {
+		"name": "First Floor",
+		"desc": "'What's the password' you hear coming from the safe skull on the safe.",
+		"up": " It's just a normal ceiling.",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV3"
+			},
+			{
+				"exit": "ACETATE",
+				"target": "CHEAT"
+			},
+			{
+				"exit": "ENTRANCE",
+				"target": "START3"
+			},
+			{
+				"exit": "1453125",
+				"target": "NOPE3"
+			}
+		],
+		"items": [
+			{
+				"item": "BOOKSHELF",
+				"desc": "At the other end there is an elevator",
+				"inspect": "You already moved the bookshelf"
+			},
+			{
+				"item": "SAFE",
+				"desc": "It won't shut up unless you leave or answer the question [Hint: just type the password no extra text is needed]",
+				"inspect": "At first you're shocked but upon closer look, it's clearly an animatronic. 'What's the password' it repeats."
+			}
+		]
+	},
+	"F1PW4": {
+		"name": "First Floor",
+		"desc": "'What's the password' you hear coming from the safe skull on the safe.",
+		"up": " It's just a normal ceiling.",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV4"
+			},
+			{
+				"exit": "ACETATE",
+				"target": "CHEAT"
+			},
+			{
+				"exit": "ENTRANCE",
+				"target": "START4"
+			},
+			{
+				"exit": "1453125",
+				"target": "NOPE4"
+			}
+		],
+		"items": [
+			{
+				"item": "BOOKSHELF",
+				"desc": "At the other end there is an elevator",
+				"inspect": "You already moved the bookshelf"
+			},
+			{
+				"item": "SAFE",
+				"desc": "It won't shut up unless you leave or answer the question [Hint: just type the password no extra text is needed]",
+				"inspect": "At first you're shocked but upon closer look, it's clearly an animatronic. 'What's the password' it repeats."
+			}
+		]
+	},
+	"F1PW5": {
+		"name": "First Floor",
+		"desc": "'What's the password' you hear coming from the safe skull on the safe.",
+		"up": " It's just a normal ceiling.",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV5"
+			},
+			{
+				"exit": "ACETATE",
+				"target": "F1V6"
+			},
+			{
+				"exit": "ENTRANCE",
+				"target": "START5"
+			},
+			{
+				"exit": "1453125",
+				"target": "NOPE5"
+			}
+		],
+		"items": [
+			{
+				"item": "BOOKSHELF",
+				"desc": "At the other end there is an elevator",
+				"inspect": "You already moved the bookshelf"
+			},
+			{
+				"item": "SAFE",
+				"desc": "It won't shut up unless you leave or answer the question [Hint: just type the password no extra text is needed]",
+				"inspect": "At first you're shocked but upon closer look, it's clearly an animatronic. 'What's the password' it repeats."
+			}
+		]
+	},
+	"NOPE1": {
+		"name": "First Floor",
+		"desc": "Safe:'That a number not a word, come back when you have the password.'",
+		"up": " It's just a normal ceiling.",
+		"exits": [
+			{
+				"exit": "MOVE BOOKSHELF",
+				"target": "F1V2"
+			},
+			{
+				"exit": "ACETATE",
+				"target": "CHEAT"
+			},
+			{
+				"exit": "ENTRANCE",
+				"target": "START"
+			}
+			,
+			{
+				"exit": "1453125",
+				"target": "NOPE1"
+			}
+		],
+		"items": [
+			{
+				"item": "BOOKSHELF",
+				"desc": "At the other end you see a lone bookshelf",
+				"inspect":"You can see light comming from under the bookshelf"
+			},
+			{
+				"item": "SAFE",
+				"desc": "It won't shut up unless you leave or answer the question [Hint: just type the password no extra text is needed]",
+				"inspect": "At first you're shocked but upon closer look, it's clearly an animatronic. 'What's the password' it repeats."
+			}
+		]
+	},
+	"NOPE2": {
+		"name": "First Floor",
+		"desc": "Safe:'That a number not a word, come back when you have the password.'",
+		"up": " It's just a normal ceiling.",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV2"
+			},
+			{
+				"exit": "ACETATE",
+				"target": "CHEAT"
+			},
+			{
+				"exit": "ENTRANCE",
+				"target": "START"
+			}
+			,
+			{
+				"exit": "1453125",
+				"target": "NOPE2"
+			}
+		],
+		"items": [
+			{
+				"item": "BOOKSHELF",
+				"desc": "At the other end there is an elevator",
+				"inspect": "You already moved the bookshelf"
+			},
+			{
+				"item": "SAFE",
+				"desc": "It won't shut up unless you leave or answer the question [Hint: just type the password no extra text is needed]",
+				"inspect": "At first you're shocked but upon closer look, it's clearly an animatronic. 'What's the password' it repeats."
+			}
+		]
+	},
+	"NOPE3": {
+		"name": "First Floor",
+		"desc": "Safe:'That a number not a word, come back when you have the password.'",
+		"up": " It's just a normal ceiling.",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV3"
+			},
+			{
+				"exit": "ACETATE",
+				"target": "CHEAT"
+			},
+			{
+				"exit": "ENTRANCE",
+				"target": "START"
+			}
+			,
+			{
+				"exit": "1453125",
+				"target": "NOPE3"
+			}
+		],
+		"items": [
+			{
+				"item": "BOOKSHELF",
+				"desc": "At the other end there is an elevator",
+				"inspect": "You already moved the bookshelf"
+			},
+			{
+				"item": "SAFE",
+				"desc": "It won't shut up unless you leave or answer the question [Hint: just type the password no extra text is needed]",
+				"inspect": "At first you're shocked but upon closer look, it's clearly an animatronic. 'What's the password' it repeats."
+			}
+		]
+	},
+	"NOPE4": {
+		"name": "First Floor",
+		"desc": "Safe:'That a number not a word, come back when you have the password.'",
+		"up": " It's just a normal ceiling.",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV4"
+			},
+			{
+				"exit": "ACETATE",
+				"target": "CHEAT"
+			},
+			{
+				"exit": "ENTRANCE",
+				"target": "START"
+			}
+			,
+			{
+				"exit": "1453125",
+				"target": "NOPE4"
+			}
+		],
+		"items": [
+			{
+				"item": "BOOKSHELF",
+				"desc": "At the other end there is an elevator",
+				"inspect": "You already moved the bookshelf"
+			},
+			{
+				"item": "SAFE",
+				"desc": "It won't shut up unless you leave or answer the question [Hint: just type the password no extra text is needed]",
+				"inspect": "At first you're shocked but upon closer look, it's clearly an animatronic. 'What's the password' it repeats."
+			}
+		]
+	},
+	"NOPE5": {
+		"name": "First Floor",
+		"desc": "Safe:'That a number not a word, come back when you have the password.'",
+		"up": " It's just a normal ceiling.",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV5"
+			},
+			{
+				"exit": "ACETATE",
+				"target": "F1V6"
+			},
+			{
+				"exit": "ENTRANCE",
+				"target": "START"
+			}
+			,
+			{
+				"exit": "1453125",
+				"target": "NOPE5"
+			}
+		],
+		"items": [
+			{
+				"item": "BOOKSHELF",
+				"desc": "At the other end there is an elevator",
+				"inspect": "You already moved the bookshelf"
+			},
+			{
+				"item": "SAFE",
+				"desc": "It won't shut up unless you leave or answer the question [Hint: just type the password no extra text is needed]",
+				"inspect": "At first you're shocked but upon closer look, it's clearly an animatronic. 'What's the password' it repeats."
+			}
+		]
+	},
+	"F2V1": {
 		"name": "Secound Floor",
-		"desc": "",
-		"exits": [{
-			"exit": "ELEVATOR",
-			"target": "ELVT"
-		}],
-		"items": []
-	},
-	"F3": {
-		"name": "Third Floor",
-		"desc": "",
-		"exits": [{
-			"exit": "ELEVATOR",
-			"target": "ELVT"
-		}],
-		"items": []
-	},
-	"F4": {
-		"name": "Fourth Floor",
-        "desc": "You enter a stange room where on the only thing that seems to be in it is a ceiling fan attached to floor",
-        "up": "You look up and find a bed attched to the ceiling, along with a table, and some chairs.",
-		"exits": [{
-			"exit": "ELEVATOR",
-			"target": "ELVT"
-		}],
-		"items": []
-	},
-	"F5": {
-		"name": "Fifth Flooth",
-        "desc": "You enter what apears to be a normal bed room. There is bed, a small cupboard, a TV mounted on the wall, and a door that looks to lead into a closet ",
-        "up": "There is just a regular ceiling fan.",
-		"exits": [{
-			"exit": "ELEVATOR",
-			"target": "ELVT"
-		}],
-		"items": []
-	},
-	"F6": {
-		"name": "Final Floor",
-		"desc": "",
-		"exits": [{
-			"exit": "ELEVATOR",
-			"target": "ELVT"
-		}],
+		"desc": "You're in a pure white room. It feels so cold and empty, it sends a chill down your spin",
+		"up": "For some reason, the ceiling looks like the night sky.",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV1"
+			}
+		],
 		"items": [
-            {
-                "item": "SWORD",
-                "desc": "An ornately carved sword is displayed on the wall.",
-                "take": "You take the sword from the wall. It glows slightly in your hand."
-            }
-        ]
+			{
+				"item": "STATUE",
+				"desc": "The only thing in the room is a metal staute of a dragon",
+				"inspect": "You find 'In dedication to the founder'carved into the base of the staute."
+			}
+		]
 	},
-	"ELVT": {
+	"F2V2": {
+		"name": "Secound Floor",
+		"desc": "You're in a pure white room. It feels so cold and empty, it sends a chill down your spin",
+		"up": "For some reason, the ceiling looks like the night sky.",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV2"
+			}
+		],
+		"items": [
+			{
+				"item": "STATUE",
+				"desc": "The only thing in the room is a metal staute of a dragon",
+				"inspect": "You find 'In dedication to the founder'carved into the base of the staute."
+			}
+		]
+	},
+	"F2V3": {
+		"name": "Secound Floor",
+		"desc": "You're in a pure white room. It feels so cold and empty, it sends a chill down your spin",
+		"up": "For some reason, the ceiling looks like the night sky.",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV3"
+			}
+		],
+		"items": [
+			{
+				"item": "STATUE",
+				"desc": "The only thing in the room is a metal staute of a dragon",
+				"inspect": "You find 'In dedication to the founder'carved into the base of the staute."
+			}
+		]
+	},
+	"F2V4": {
+		"name": "Secound Floor",
+		"desc": "You're in a pure white room. It feels so cold and empty, it sends a chill down your spin",
+		"up": "For some reason, the ceiling looks like the night sky.",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV4"
+			}
+		],
+		"items": [
+			{
+				"item": "STATUE",
+				"desc": "The only thing in the room is a metal staute of a dragon",
+				"inspect": "You find 'In dedication to the founder'carved into the base of the staute."
+			}]
+	},
+	"F2V5": {
+		"name": "Secound Floor",
+		"desc": "You find yourself in a room with nothing but a metal statue of a dragon in the middle",
+		"up": "For some reason, the ceiling looks like the night sky.",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV5"
+			},
+			{
+				"exit": "USE GEM",
+				"target": "QUESTION1"
+			}
+		],
+		"items": [
+			{
+				"item": "STATUE",
+				"desc": "The only thing in the room is a metal staute of a dragon",
+				"inspect": "You find 'In dedication to the founder'carved into the base of the staute."	
+			}
+		]
+	},
+	"F2V6": {
+		"name": "Secound Floor",
+		"desc": "You find yourself in a room with nothing.",
+		"up": "For some reason, the ceiling looks like the night sky.",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV6"
+			}
+		],
+		"items": []
+	},
+	"F2V7": {
+		"name": "Secound Floor",
+		"desc": "You find yourself in a room with nothing.",
+		"up": "For some reason, the ceiling looks like the night sky.",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV7"
+			}
+		],
+		"items": []
+	},
+	"F2V8": {
+		"name": "Secound Floor",
+		"desc": "You find yourself in a room with nothing.",		
+		"up": "For some reason, the ceiling looks like the night sky.",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV8"
+			}
+		],
+		"items": []
+	},
+	"F3V1": {
+		"name": "Third Floor",
+		"desc": "The room is small and dusty.",
+		"up": "You see cobwebs full of flies in each of the room's corners. Seems like the spiders won't be going hungry for awhile",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV1"
+			}
+		],
+		"items": []
+	},"F3V2": {
+		"name": "Third Floor",
+		"desc": "The room is small and dusty.",
+		"up": "You see cobwebs full of flies in each of the room's corners. Seems like the spiders won't be going hungry for awhile",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV2"
+			}
+		],
+		"items": []
+	},
+	"F3V3": {
+		"name": "Third Floor",
+		"desc": "The room is small and dusty.",
+		"up": "You see cobwebs full of flies in each of the room's corners. Seems like the spiders won't be going hungry for awhile",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVT3"
+			},
+			{
+				"exit": "USE DUST FEATHER",
+				"target": "F3V4"
+			}
+		],
+		"items": []
+	},
+	"F3V4": {
+		"name": "Third Floor",
+		"desc": "You brush aside the dust and see writing on one of the walls: '1=a, 2=t, 3=t, 4=c, 5=e' .",
+		"up": "You see cobwebs full of flies in each of the room's corners. Seems like the spiders won't be going hungry for awhile",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV4"
+			}
+		],
+		"items": []
+	},
+	"F3V5": {
+		"name": "Third Floor",
+		"desc": " On one of the walls yoo see '1=a, 2=t, 3=t, 4=c, 5=e' .",
+		"up": "You see cobwebs full of flies in each of the room's corners. Seems like the spiders won't be going hungry for awhile",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV5"
+			}
+		],
+		"items": []
+	},
+	"F3V6": {
+		"name": "Third Floor",
+		"desc": " On one of the walls yoo see '1=a, 2=t, 3=t, 4=c, 5=e' .",
+		"up": "You see cobwebs full of flies in each of the room's corners. Seems like the spiders won't be going hungry for awhile",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV6"
+			}
+		],
+		"items": []
+	},
+	"F3V7": {
+		"name": "Third Floor",
+		"desc": " On one of the walls yoo see '1=a, 2=t, 3=t, 4=c, 5=e' .",
+		"up": "You see cobwebs full of flies in each of the room's corners. Seems like the spiders won't be going hungry for awhile",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV7"
+			}
+		],
+		"items": []
+	},
+	"F3V8": {
+		"name": "Third Floor",
+		"desc": " On one of the walls yoo see '1=a, 2=t, 3=t, 4=c, 5=e' .",
+		"up": "You see cobwebs full of flies in each of the room's corners. Seems like the spiders won't be going hungry for awhile",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV8"
+			}
+		],
+		"items": []
+	},
+	"F4V1": {
+		"name": "Fourth Floor",
+		"desc": "You enter a strange room where the only thing that seems to be in it is a ceiling fan attached to floor",
+		"up": "You look up and find a bed attched to the ceiling, along with a table, and some chairs.",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV1"
+			},
+			{
+				"exit": "TURN FAN",
+				"target": "F4V2"
+			}
+		],
+		"items": [
+			{
+				"item": "FAN",
+				"desc": "If it's on the floor can you still call it a ceiling fan, or is it a floor fan?",
+				"inspect": "Under one of the blades of the fan you see a symbol that looks like an arrow turning."
+			}
+		]
+	},
+	"F4V2": {
+		"name": "Fourth Floor",
+		"desc": "You're in a mostly empty room.",
+		"up": "You look up and find a bed attched to the ceiling, along with a table, and some chairs.",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV2"
+			}
+		],
+		"items": [
+			{
+				"item": "PILLOW",
+				"desc": "One of the pillows fall from the bed on the ceiling and land on the floor.",
+				"inspect": "It is a blue pillow, there doesn't seem to be anything strange about it.",
+				"take": "You take the blue pillow with you."
+			}
+		]
+	},
+	"F4V3": {
+		"name": "Fourth Floor",
+		"desc": "You're in a mostly empty room.",
+		"up": "You look up and find a bed attched to the ceiling, along with a table, and some chairs.",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV3"
+			}
+		],
+		"items": [
+			{
+				"item": "FAN",
+				"desc": "The ceiling fan is still on the floor.",
+				"inspect": "The fan's blade seems stuck in place now."
+			}
+		]
+	},
+	"F4V4": {
+		"name": "Fourth Floor",
+		"desc": "You're in a mostly empty room.",
+		"up": "You look up and find a bed attched to the ceiling, along with a table, and some chairs.",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV4"
+			}
+		],
+		"items": [
+			{
+				"item": "FAN",
+				"desc": "The ceiling fan is still on the floor.",
+				"inspect": "The fan's blade seems stuck in place now."
+			}
+		]
+	},
+	"F4V5": {
+		"name": "Fourth Floor",
+		"desc": "You're in a mostly empty room.",
+		"up": "You look up and find a bed attched to the ceiling, along with a table, and some chairs.",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV5"
+			}
+		],
+		"items": [
+			{
+				"item": "FAN",
+				"desc": "The ceiling fan is still on the floor.",
+				"inspect": "The fan's blade seems stuck in place now."
+			}
+		]
+	},
+	"F4V6": {
+		"name": "Fourth Floor",
+		"desc": "You're in a mostly empty room.",
+		"up": "You look up and find a bed attched to the ceiling, along with a table, and some chairs.",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV6"
+			}
+		],
+		"items": [
+			{
+				"item": "FAN",
+				"desc": "The ceiling fan is still on the floor.",
+				"inspect": "The fan's blade seems stuck in place now."
+			}
+		]
+	},
+	"F4V7": {
+		"name": "Fourth Floor",
+		"desc": "You're in a mostly empty room.",
+		"up": "You look up and find a bed attched to the ceiling, along with a table, and some chairs.",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV7"
+			}
+		],
+		"items": [
+			{
+				"item": "FAN",
+				"desc": "The ceiling fan is still on the floor.",
+				"inspect": "The fan's blade seems stuck in place now."
+			}
+		]
+	},
+	"F4V8": {
+		"name": "Fourth Floor",
+		"desc": "You're in a mostly empty room.",
+		"up": "You look up and find a bed attched to the ceiling, along with a table, and some chairs.",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV8"
+			}
+		],
+		"items": [
+			{
+				"item": "FAN",
+				"desc": "The ceiling fan is still on the floor.",
+				"inspect": "The fan's blade seems stuck in place now."
+			}
+		]
+	},
+	"F5V1": {
+		"name": "Fifth Flooth",
+		"desc": "You enter what apears to be a normal bed room. There is bed, a small cupboard, a TV mounted on the wall, and a door that looks to lead into a closet ",
+		"up": "There is just a regular ceiling fan.",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV1"
+			}
+		],
+		"items": [
+			{
+				"item": "BED",
+				"desc": "There is a bed",
+				"inspect": "It is a king size bed with on one red pillow and a purple bed sheet"
+			},
+			{
+				"item": "CUPBOARD",
+				"desc": "a cupboard",
+				"inspect": "You open up the cupboard, there is nothing inside."
+			},
+			{
+				"item": "TV",
+				"desc": "a TV mounted on the wall",
+				"inspect": "You turn the TV to find it playing reality televison. Since you can't find a means to change the channel, you turn off rather then subject yourself to that."
+			},
+			{
+				"item": "CLOSET",
+				"desc": "and a door that looks to lead into a closet",
+				"inspect": "The door is locked, you need a key to open it."
+			}
+		]
+	},
+	"F5V2": {
+		"name": "Fifth Flooth",
+		"desc": "You enter what apears to be a normal bed room.",
+		"up": "There is just a regular ceiling fan.",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV2"
+			},
+			{
+				"exit": "USE PILLOW",
+				"target": "F5V3"
+			}
+		],
+		"items": [
+			{
+				"item": "BED",
+				"desc": "There is a bed",
+				"inspect": "It is a king size bed with on one red pillow and a purple bed sheet",
+				"take": "You pick up the gem"
+			},
+			{
+				"item": "CUPBOARD",
+				"desc": "a cupboard",
+				"inspect": "You open up the cupboard, there is nothing inside."
+			},
+			{
+				"item": "TV",
+				"desc": "a TV mounted on the wall",
+				"inspect": "You turn the TV to find it playing reality televison. Since you can't find a means to change the channel, you turn off rather then subject yourself to that."
+			},
+			{
+				"item": "CLOSET",
+				"desc": "and a door that looks to lead into a closet",
+				"inspect": "The door is locked, you need a key to open it."
+			}
+		]
+	},
+	"F5V3": {
+		"name": "Fifth Flooth",
+		"desc": "After you placed the the pillow next to the red one, the whole bed folded into the wall revealing a dust feather underneath.",
+		"up": "There is just a regular ceiling fan.",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV2"
+			},
+			{
+				"exit": "GET DUST FEATHER",
+				"target": "F5V4"
+			}
+		],
+		"items": [
+			{
+				"item": "DUST FEATHER",
+				"desc": "There is now a dust feather where the bed once was",
+				"inspect":"You wonder if this is really it.",
+				"take": "You take the dust feather."
+			},
+			{
+				"item": "CUPBOARD",
+				"desc": "a cupboard",
+				"inspect": "You open up the cupboard, there is nothing inside."
+			},
+			{
+				"item": "TV",
+				"desc": "a TV mounted on the wall",
+				"inspect": "You turn the TV to find it playing reality televison. Since you can't find a means to change the channel, you turn off rather then subject yourself to that."
+			},
+			{
+				"item": "CLOSET",
+				"desc": "and a door that looks to lead into a closet",
+				"inspect": "The door is locked, you need a key to open it."
+			}
+		]
+	},
+	"F5V4": {
+		"name": "Fifth Flooth",
+		"desc": "You're in a normal bedroom.",
+		"up": "There is just a regular ceiling fan.",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV3"
+			}
+		],
+		"items": [
+			{
+				"item": "CUPBOARD",
+				"desc": "a cupboard",
+				"inspect": "You open up the cupboard, there is nothing inside."
+			},
+			{
+				"item": "TV",
+				"desc": "a TV mounted on the wall",
+				"inspect": "You turn the TV to find it playing reality televison. Since you can't find a means to change the channel, you turn off rather then subject yourself to that."
+			},
+			{
+				"item": "CLOSET",
+				"desc": "and a door that looks to lead into a closet",
+				"inspect": "The door is locked, you need a key to open it."
+			}
+		]
+	},
+	"F5V5": {
+		"name": "Fifth Flooth",
+		"desc": "You're in a normal bedroom.",
+		"up": "There is just a regular ceiling fan.",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV4"
+			}
+		],
+		"items": [
+			{
+				"item": "CUPBOARD",
+				"desc": "a cupboard",
+				"inspect": "You open up the cupboard, there is nothing inside."
+			},
+			{
+				"item": "TV",
+				"desc": "a TV mounted on the wall",
+				"inspect": "You turn the TV to find it playing reality televison. Since you can't find a means to change the channel, you turn off rather then subject yourself to that."
+			},
+			{
+				"item": "CLOSET",
+				"desc": "and a door that looks to lead into a closet",
+				"inspect": "The door is locked, you need a key to open it."
+			}
+		]
+	},
+	"F5V6": {
+		"name": "Fifth Flooth",
+		"desc": "You're in a normal bedroom.",
+		"up": "There is just a regular ceiling fan.",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV5"
+			}
+		],
+		"items": [
+			{
+				"item": "CUPBOARD",
+				"desc": "a cupboard",
+				"inspect": "You open up the cupboard, there is nothing inside."
+			},
+			{
+				"item": "TV",
+				"desc": "a TV mounted on the wall",
+				"inspect": "You turn the TV to find it playing reality televison. Since you can't find a means to change the channel, you turn off rather then subject yourself to that."
+			},
+			{
+				"item": "CLOSET",
+				"desc": "and a door that looks to lead into a closet",
+				"inspect": "The door is locked, you need a key to open it."
+			}
+		]
+	},
+	"F5V7": {
+		"name": "Fifth Flooth",
+		"desc": "You're in a normal bedroom.",
+		"up": "There is just a regular ceiling fan.",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV6"
+			},
+			{
+				"exit": "USE KEY",
+				"target": "F5V8"
+			}
+		],
+		"items": [
+			{
+				"item": "CUPBOARD",
+				"desc": "a cupboard",
+				"inspect": "You open up the cupboard, there is nothing inside."
+			},
+			{
+				"item": "TV",
+				"desc": "a TV mounted on the wall",
+				"inspect": "You turn the TV to find it playing reality televison. Since you can't find a means to change the channel, you turn off rather then subject yourself to that."
+			},
+			{
+				"item": "CLOSET",
+				"desc": "and a door that looks to lead into a closet",
+				"inspect": "The door is locked, you need a key to open it."
+			}
+		]
+	},
+	"F5V8": {
+		"name": "Fifth Flooth",
+		"desc": "You're in a normal bedroom.",
+		"up": "There is just a regular ceiling fan.",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV7"
+			},
+			{
+				"exit": "PULL LEVER",
+				"target": "F5V9"
+			}
+		],
+		"items": [
+			{
+				"item": "CUPBOARD",
+				"desc": "a cupboard",
+				"inspect": "You open up the cupboard, there is nothing inside."
+			},
+			{
+				"item": "TV",
+				"desc": "a TV mounted on the wall",
+				"inspect": "You turn the TV to find it playing reality televison. Since you can't find a means to change the channel, you turn off rather then subject yourself to that."
+			},
+			{
+				"item": "CLOSET",
+				"desc": "and a door you to a closet",
+				"inspect": "You already opened the closet door."
+			},
+			{
+				"item": "LEVER",
+				"desc": "You open the closet and find a lever",
+				"inspect": "It's the only thing in the closet.",
+				"Pull":"You pull the lever and the whole building starts shaking"
+			}
+		]
+	},
+	"F5V9": {
+		"name": "Fifth Flooth",
+		"desc": "You're in a normal bedroom.",
+		"up": "There is just a regular ceiling fan.",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV8"
+			}
+		],
+		"items": [
+			{
+				"item": "CUPBOARD",
+				"desc": "a cupboard",
+				"inspect": "You open up the cupboard, there is nothing inside."
+			},
+			{
+				"item": "TV",
+				"desc": "a TV mounted on the wall",
+				"inspect": "You turn the TV to find it playing reality televison. Since you can't find a means to change the channel, you turn off rather then subject yourself to that."
+			},
+			{
+				"item": "CLOSET",
+				"desc": "and a door you to a closet",
+				"inspect": "You already opened the closet door."
+			},
+			{
+				"item": "LEVER",
+				"desc": "in the closet is a giant lever",
+				"inspect": "It's the only thing in the closet.",
+				"Pull":"You already pulled it"
+			}
+		]
+	},
+	"F6V1": {
+		"name": "Final Floor",
+		"desc": "You did it, you reached the final floor",
+		"exits": [
+			{
+				"exit": "ELEVATOR",
+				"target": "ELVTV7"
+			},
+			{
+				"exit": "GET BUTTON",
+				"target": "EXIT"
+			}
+		],
+		"items": [
+			{
+				"item": "BUTTON",
+				"desc": "You see a clip-on button set on a pedestal",
+				"take": "You take the button and put it on. Despite not paying money you still feel ripped off.",
+				"inspect": "The button has 'I beat Ramos's Mansion' written on it" 
+			}
+		]
+	},
+	"ELVTV1": {
 		"name": "Elevator",
-        "desc": "The elevator has buttons for floors 1 through 5, there is a hole where the sixth button should be.",
-        "up": "Above the door so see in writing '14531325'",
-		"exits": [{
-			"exit": "1",
-			"target": "F1"
-		}, {
-			"exit": "2",
-			"target": "F2"
-		}, {
-			"exit": "3",
-			"target": "F3"
-		}, {
-			"exit": "4",
-			"target": "F4"
-		}, {
-			"exit": "5",
-			"target": "F5"
-		}, {
-			"exit": "6",
-			"target": "F6"
-		}],
+		"desc": "The elevator has buttons for floors 1 through 5, there is a hole where the sixth button should be.",
+		"up": "Above the door, you see '1453125'",
+		"exits": [
+			{
+				"exit": "1",
+				"target": "F1V2"
+			},
+			{
+				"exit": "2",
+				"target": "F2V1"
+			},
+			{
+				"exit": "3",
+				"target": "F3V1"
+			},
+			{
+				"exit": "4",
+				"target": "F4V1"
+			},
+			{
+				"exit": "5",
+				"target": "F5V1"
+			}
+		],
+		"items": []
+	},
+	"ELVTV2": {
+		"name": "Elevator",
+		"desc": "The elevator has buttons for floors 1 through 5, there is a hole where the sixth button should be.",
+		"up": "Above the door, you see '1453125'",
+		"exits": [
+			{
+				"exit": "1",
+				"target": "F1V3"
+			},
+			{
+				"exit": "2",
+				"target": "F2V2"
+			},
+			{
+				"exit": "3",
+				"target": "F3V2"
+			},
+			{
+				"exit": "4",
+				"target": "F4V2"
+			},
+			{
+				"exit": "5",
+				"target": "F5V2"
+			}
+		],
+		"items": []
+	},
+	"ELVTV3": {
+		"name": "Elevator",
+		"desc": "The elevator has buttons for floors 1 through 5, there is a hole where the sixth button should be.",
+		"up": "Above the door, you see '1453125'",
+		"exits": [
+			{
+				"exit": "1",
+				"target": "F1V4"
+			},
+			{
+				"exit": "2",
+				"target": "F2V3"
+			},
+			{
+				"exit": "3",
+				"target": "F3V3"
+			},
+			{
+				"exit": "4",
+				"target": "F4V3"
+			},
+			{
+				"exit": "5",
+				"target": "F5V4"
+			}
+		],
+		"items": []
+	},
+	"ELVTV4": {
+		"name": "Elevator",
+		"desc": "The elevator has buttons for floors 1 through 5, there is a hole where the sixth button should be.",
+		"up": "Above the door, you see '1453125'",
+		"exits": [
+			{
+				"exit": "1",
+				"target": "F1V5"
+			},
+			{
+				"exit": "2",
+				"target": "F2V4"
+			},
+			{
+				"exit": "3",
+				"target": "F3V4"
+			},
+			{
+				"exit": "4",
+				"target": "F4V4"
+			},
+			{
+				"exit": "5",
+				"target": "F5V5"
+			}
+		],
+		"items": []
+	},
+	"ELVTV5": {
+		"name": "Elevator",
+		"desc": "The elevator has buttons for floors 1 through 5, there is a hole where the sixth button should be.",
+		"up": "Above the door, you see '1453125'",
+		"exits": [
+			{
+				"exit": "1",
+				"target": "F1V7"
+			},
+			{
+				"exit": "2",
+				"target": "F2V5"
+			},
+			{
+				"exit": "3",
+				"target": "F3V5"
+			},
+			{
+				"exit": "4",
+				"target": "F4V5"
+			},
+			{
+				"exit": "5",
+				"target": "F5V6"
+			}
+		],
+		"items": []
+	},
+		"ELVTV6": {
+			"name": "Elevator",
+			"desc": "The elevator has buttons for floors 1 through 5, there is a hole where the sixth button should be.",
+			"up": "Above the door, you see '1453125'",
+			"exits": [
+				{
+					"exit": "1",
+					"target": "F1V8"
+				},
+				{
+					"exit": "2",
+					"target": "F2V6"
+				},
+				{
+					"exit": "3",
+					"target": "F3V6"
+				},
+				{
+					"exit": "4",
+					"target": "F4V6"
+				},
+				{
+					"exit": "5",
+					"target": "F5V7"
+				}
+			],
+		"items": []
+	},
+	"ELVTV7": {
+		"name": "Elevator",
+		"desc": "The elevator has buttons for floors 1 through 5, there is a hole where the sixth button should be.",
+		"up": "Above the door, you see '1453125'",
+		"exits": [
+			{
+				"exit": "1",
+				"target": "F1V9"
+			},
+			{
+				"exit": "2",
+				"target": "F2V7"
+			},
+			{
+				"exit": "3",
+				"target": "F3V7"
+			},
+			{
+				"exit": "4",
+				"target": "F4V7"
+			},
+			{
+				"exit": "5",
+				"target": "F5V7"
+			},
+			{
+				"exit": "5",
+				"target": "F5V8"
+			}
+		],
+				"items": []
+		},
+		"ELVTV8": {
+			"name": "Elevator",
+			"desc": "The elevator has buttons for floors 1 through 5, and the sixth button is now there somehow.",
+			"up": "Above the door, you see '1453125'",
+			"exits": [
+				{
+					"exit": "1",
+					"target": "F1V10"
+				},
+				{
+					"exit": "2",
+					"target": "F2V8"
+				},
+				{
+					"exit": "3",
+					"target": "F3V8"
+				},
+				{
+					"exit": "4",
+					"target": "F4V8"
+				},
+				{
+					"exit": "5",
+					"target": "F5V9"
+				},
+				{
+					"exit": "6",
+					"target": "F6V1"
+				}
+	
+			],
+					"items": []
+			},
+	"QUESTION1": {
+		"name": "Secound Floor",
+		"desc":"A cage falls on top of you, preventing you from leaving. However, before you have time to think about it, the dragon stands up and starts speaking",
+		"up": "For some reason the ceiling looks like the night sky.",
+		"exits": [
+			{
+				"exit": "4",
+				"target": "QUESTION2"
+			},
+			{
+				"exit": "FORTH FLOOR",
+				"target": "QUESTION2"
+			}
+		],
+		"items": [
+			{
+				"item": "STATUE",
+				"desc": "Dragon: You've done well so far but now you must answer my questions correctly if you hope to leave",
+				"inspect": "You see 'In dedication to the founder'carved into the base of the staute."
+			},
+			{
+				"item": "DRAGON",
+				"desc": "Dragon: First, what was the number of the room that was upside down?",
+				"inspect": "Thing have gone from 0 to 100, you're not sure what to do aside from answer the question."
+			}
+		]
+	},
+	"QUESTION2": {
+		"name": "Secound Floor",
+		"desc":"Dragon: That was a warm up.",
+		"up": "For some reason the ceiling looks like the night sky.",
+		"exits": [
+			{
+				"exit": "5",
+				"target": "QUESTION3"
+			},
+			{
+				"exit": "FIFTH FLOOR",
+				"target": "QUESTION3"
+			}
+		],
+		"items": [
+			{
+				"item": "STATUE",
+				"desc": "Dragon: Next Question what floor will you have to go to, after this one, before you can go to the sixth floor",
+				"inspect": "You see 'In dedication to the founder'carved into the base of the staute."
+			},
+			{
+				"item": "DRAGON",
+				"desc": "",
+				"inspect": "Thing have gone from 0 to 100, you're not sure what to do aside from answer the question."
+			}
+		]
+	},
+	"QUESTION3": {
+		"name": "Secound Floor",
+		"desc":"Dragon: Good",
+		"up": "For some reason the ceiling looks like the night sky.",
+		"exits": [
+			{
+				"exit": "RAMOS",
+				"target": "KEY"
+			},
+			{
+			}
+		],
+		"items": [
+			{
+				"item": "STATUE",
+				"desc": "Dragon: Final question, What's my name",
+				"inspect": "You see 'In dedication to the founder'carved into the base of the staute."
+			},
+			{
+				"item": "DRAGON",
+				"desc": "",
+				"inspect": "You're tyring to think if you were ever told his name or any name for that matter.."
+			}
+		]
+	},
+	"CHEAT": {
+		"name": "Cheaters Dungeon",
+		"desc":"You shouldn't be able to know the password yet, so that mean you're now trapped here for cheating. There is no escape",
+		"up": "There is only the void.",
+		"exits": [],
+		"items": {}
+	},
+	"KEY": {
+		"name": "Secound Floor",
+		"desc":"You after you answered the question the dragon just smiled and vainshed",
+		"up": "For some reason the ceiling looks like the night sky.",
+		"exits": [
+			{
+				"exit": "GET KEY",
+				"target": "F2V6"
+			}
+		],
+		"items": [
+			{
+				"item": "KEY",
+				"desc": "The cage is lifted and there is now a key on the floor, it's probably a good idea to take the key before leaving.",
+				"inspect": "The key is where the dragon once was. You still wonder what exactly was that thing.",
+				"take": "You took the key"
+			}
+		]
+	},
+	"EXIT": {
+		"name": "THE END",
+		"desc": "Game made by Harrison Hinkle",
+		"exits": [],
 		"items": []
 	}
 }

@@ -2,16 +2,146 @@
     "FLIER": {
        "exits": {},
        "actions": {
-          "READ": "Hello"
+          "READ": "Welcome to Ramos's Mansion. Can you be the first to make it to the six floor of this mysterious building? Make sure you INSPECT everything you find and always LOOK UP so you do miss anything [To see a list of all the commands enter COMMAND.]"
        },
        "progress": 1
     },
     "BOOKSHELF": {
        "exits": {},
        "actions": {
-          "inspect":"You can see light comming from under the bookshelf",
-          "move": "You move the bookshelf to reveal an elevator door"
+          "MOVE": "You move the bookshelf to reveal an elevator door."
        },
        "progress": 10
+    },
+    "FAN": {
+       "exits": {},
+       "actions": {
+          "TURN": "You turn the fan until you here a clicking noise."
+       },
+       "progress": 10
+    },
+    "PILLOW": {
+       "exits": {},
+       "actions": {
+          "USE": "You tried using the pillow"
+       },
+       "progress": 10
+    },
+    "BED": {
+       "exits": {},
+       "actions": {
+          "USE": ""
+       },
+       "progress": 10
+    },
+    "DUST FEATHER": {
+       "exits": {
+
+       },
+       "actions": {
+          "USE": "You tried using the dust feather"
+       },
+       "progress": 10
+    },
+    "CUPBOARD": {
+      "exits": {
+
+      },
+      "actions": {
+         "USE": ""
+      },
+      "progress": 10
+    },
+    "TV": {
+      "exits": {
+
+      },
+      "actions": {
+         "USE": ""
+      },
+      "progress": 10
+    },
+    "CLOSET": {
+      "exits": {
+
+      },
+      "actions": {
+         "USE": ""
+      },
+      "progress": 10
+    },
+    "CURTAINS": {
+      "exits": {
+
+      },
+      "actions": {
+         "PULL": "You pull up the curtains and see a what appears to be a safe with a carving of a skull on it."
+      },
+      "progress": 10
+    },
+    "SAFE": {
+      "exits": {
+
+      },
+      "actions": {
+         "USE": ""
+      },
+      "progress": 10
+    },
+    "GEM": {
+      "exits": {
+
+      },
+      "actions": {
+         "USE": "YOU TRIED USING THE GEM"
+      },
+      "progress": 10
+    },
+    "STATUE": {
+      "exits": {
+
+      },
+      "actions": {
+         "USE": ""
+      },
+      "progress": 10
+    },
+    "DRAGON": {
+      "exits": {
+
+      },
+      "actions": {
+         "USE": ""
+      },
+      "progress": 10
+    },
+    "KEY": {
+      "exits": {
+
+      },
+      "actions": {
+         "USE": "You tried to use the key"
+      },
+      "progress": 10
+    },
+    "LEVER": {
+      "exits": {
+
+      },
+      "actions": {
+         "PULL":"You pull lever and the whole building starts shacking"
+      },
+      "progress": 10
+    },
+    "BUTTON": {
+      "exits": {
+
+      },
+      "actions": {
+         "USE": ""
+      },
+      "progress": 10
     }
+
+    
  }

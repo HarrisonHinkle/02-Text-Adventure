@@ -38,11 +38,6 @@ def render(game,items,current):
             print(i["desc"])
     
 
-
-
-    
-    
-
 def get_input():
     response = input("What will you do? ")
     response = response.upper().strip()
@@ -54,45 +49,72 @@ def update(game,items,current,response) :
         for i in inventory:
             print("a " + i.lower())
         return current
-
+    c = game[current]
     if response == "LOOK UP":
         c = game[current]
         print("\n" + c["up"])
 
-    c = game[current]
-    for e in c["exits"]:
-        if response == e["exit"]:
-            return e["target"]
 
-    for item in c["items"]:
-        if response == "GET " + item["item"] and not check_inventory(item["item"]):
-            print(item["take"])
-            inventory.append(item["item"])
-            return current
+    try:
+        for item in c["items"]:
+            if response == "GET " + item["item"] and not check_inventory(item["item"]):
+                print("")
+                print(item["take"])
+                inventory.append(item["item"])
+    except:
+        print("You can't get that item")
+            
+    try:
+        for i in c["items"]:
+            if response == "INSPECT " + i["item"]:
+                print("")
+                print(i["inspect"])
+                return current
+    except: 
+        print("I don't understand what you're looking at")
+        
+    if response == "COMMAND":
+        print("Inspect [item]- inspect allows you to gain more information about any item that allows it. This can be important as it helps solve some puzzles.")
+        print("Look up- Look up let's you see what's above and may revael inportant information. Try to do it in every room.")
+        print("Get [item]- entering get and an item name will allow you to pick up some items bot don't expect it to work for all of them")
+        print("Use [item]- attempts to use an items in your inventory, if nothing happens that means it was unsuccessful.")
+        print("Elevator- returns you from any floor to the elevator once you hve it unlocked.")
+        print("Leave- allows you to quit out of the game.")
 
-    for i in c["items"]:
-        if response == "INSPECT " + i["item"]:
-            print(i["inspect"])
-            return current
-    
-    
+
+
+
     for i in inventory:
         for action in items[i]["actions"]:
             if response == action + " " + i:
+                print("")
                 print(items[i]["actions"][action])
-                return current
+                
+
+    for item in c["items"]:
+        i = item["item"]
+        for action in items[i]["actions"]:
+            if response == action + " " + i:
+                print("")
+                print(items[i]["actions"][action])
+                
+    
+    
+    for e in c["exits"]:
+        if response == e["exit"]:
+            return e["target"]
+ 
 
     return current 
 
 
-    
 
 
 
 
 # The main function for the game
 def main():
-    current = 'START'  # The starting location
+    current = 'START1'  # The starting location
     end_game = ['END']  # Any of the end-game locations
 
     (game,items) = load_files()
@@ -102,6 +124,7 @@ def main():
         render(game,items,current)
         response = get_input()
         if response == "LEAVE":
+            print("You decided this wasn't worth your time, and went home.")
             break
         current = update(game,items,current,response)
 
